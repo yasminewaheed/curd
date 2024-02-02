@@ -1,0 +1,41 @@
+body{
+    background-color:#F7ECDE;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    position: relative;
+}
+h1::after{
+  content: " ";
+  background-color: #FEC260;
+  width: 280px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  left: 480px;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+h1::before{
+    content: "...................................................................................................................................................................................................................................................";
+    font-size:large;
+    color: black;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    margin-block: 50px;
+
+}
+
+h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    font-weight: 900;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

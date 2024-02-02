@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/style.css">
+</head>
+<body>
+    <h1 class="text-center m-5">Bookmarker</h1>
+    <div class="w-75 mx-auto p-5">
+
+        <h2 class="text-center p-3"> Bookmark your favorite sites </h2>
+
+        <div>
+            <label for="siteNameInput">Site Name</label>
+            <input oninput="validationName()" placeholder="Bookmark Name" class="form-control is-valid" type="text" id="siteNameInput">
+            <div id="nameMessage" class="alert alert-danger d-none">.....  you should.....</div>
+        </div>
+        <div>
+            <label for="siteURLInput">Site URL</label>
+            <input oninput="validationName()" placeholder="Website URL" class="form-control is-valid" type="text" id="siteURLInput">
+            <div id="urlMessage" class="alert alert-danger d-none">.....  you should.....</div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <button onclick="addProduct()" class="btn btn-danger mt-3 text-center "> Add Product</button>
+              </div>
+            </div>
+        </div>
+          
+        <!-- <div>
+            <button onclick="addProduct()" class="btn btn-danger mt-3 text-center "> Add Product</button>
+        </div> -->
+
+        <input id="searchInput" oninput="search()" placeholder="Search By Name..." type="search" class="form-control my-3 w-75 mx-auto ">
+    
+        <table class="table my-3 text-center">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>URL</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/main.js"></script>
+</body>
+</html>
+
+
+<!-- <div>
+    <label for="siteNameInput">Site Name</label>
+    <input  placeholder="Bookmark Name" class="form-control" type="text" id="siteNameInput">
+</div> -->
